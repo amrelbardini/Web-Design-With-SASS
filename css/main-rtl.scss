@@ -1,0 +1,250 @@
+﻿@import "sass/helpers/variables";
+$float-left:right;
+$float-right:left;
+
+$float-left:right;
+$float-right:left;
+
+$text-right:left;
+$text-left:right;
+
+/*Start header */
+/*Start Header section*/
+.header {
+    
+    .logo{
+       
+        float:left; 
+         
+          
+        @media(#{$minSmall}){
+            width:100%;
+            float:none;
+            text-align:center;
+        }
+         @media(#{$minMid}){
+            width:30%;
+            float:$float-left;
+            text-align:$text-left;
+        }
+        
+        h1{
+            
+            margin-bottom:0;
+            margin-top:0px;
+        }
+        p{
+            font-size:16px;
+            color:$pColor;
+        }
+    }
+    /*Start Nav*/
+    .navbar-o {               
+        float:$float-left;                     
+        @media(#{$minMid}){           
+            float:$float-left;                          
+        }      
+            
+      ul li{          
+           float:$float-left;                    
+          @media(#{$maxMobile}){             
+              text-align:$text-left;             
+          }
+      }
+            
+    }
+    /*end Nav*/
+}
+/*End Header section*/
+
+
+/*End header */
+/*Start Slider*/
+.slider {
+    padding:10px 0;
+    text-align:center;
+    q{
+        width:80%;
+        color:#5e5e5e;
+        padding:10px;
+        font-style:italic;
+        font-weight:bold;
+        font-family:Tahoma;
+    }
+    .img-container {
+        max-width:800px; 
+        margin:10px auto;     
+        img{
+            max-width:100%;
+             align-self:center;
+        }
+    }
+    .bullets{
+        li {
+            display:inline-block;
+            text-align:center;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            border:2px solid #CCC;
+            background-color:#CCC;
+            &.active,&:hover
+            {
+                cursor:pointer;
+                border:2px solid #333;
+                background-color:#FFF;
+            }
+        }
+    }
+}
+
+/*End Slider*/
+/*Start Section services*/
+.services {
+    .service-box{
+        text-align:center;
+        &:not(last-of-type){
+            padding-right:20px;
+        }       
+        .service-title{
+            font-size:26px;
+            
+        }
+        .service-desc{
+            color:$pColor;
+        }
+        .link{
+            color:$mainColor;
+            text-decoration:none;
+        }
+        @media(#{$maxMobile}){
+            svg{
+                font-size:30px;
+                display:block;
+                margin-bottom:5px;
+                width:100%;
+            }
+            
+        }
+    }
+}
+
+
+/*End Section services*/
+/*start section Our players*/
+.our-players {
+    .player-box{
+        float:$float-left;
+        
+        
+        @media(#{$minSmall}){
+            
+            text-align: $text-left;
+        }
+        @media(#{$minMid}){
+           
+            text-align: $text-left;
+            
+        }
+               
+    }
+}
+
+
+/*End section Our players*/
+
+/*start section lorem */
+.lorem {
+    .img-box{
+        float:$float-left;
+              
+         }
+    }
+/*End section lorem */
+
+/* Start footer section*/
+.footer {
+     
+    .gallary, .info ,.contact {
+        float:$float-left;
+    }
+    .gallary {
+        
+       @media(#{$minMid}){       
+        float:$float-left;
+    }
+     @media (min-width:1200px){
+         
+         float:$float-left;
+        
+     }
+
+    }
+    .info{
+        
+        @media(#{$maxMobile}){
+           
+            float:$float-left;
+        }
+        @media(#{$minSmall}){           
+            float: $float-left;            
+        }
+        @media(#{$minMid}){       
+         float:$float-left;
+     }
+     @media (min-width:1200px){
+        float:$float-left;
+    }
+     
+     
+     }
+
+    
+    .contact {
+        
+        @media(#{$maxMobile}){
+            float:$float-left;       
+        }
+        
+        @media(#{$minSmall}){
+            float: $float-left;
+        }
+        @media(#{$minMid}){        
+         float:$float-left;        
+         }
+         @media (min-width:1200px){
+            float:$float-left;
+            margin-right: 50px;
+        }
+     
+    }
+    
+    .img-box {
+         
+        img{
+            float:$float-left;
+        }
+        .text{
+            float:$float-left;
+        }
+    }       
+    }           
+    .copyright{       
+        .copyright-text{
+            float:$float-left;
+        }
+        .copyright-text{
+            text-align:$text-left;
+        }
+        .author {
+            float:$float-left;
+        }
+        .author{
+            text-align:$text-right;
+        }
+    }
+
+
+
+
+/* End footer section*/

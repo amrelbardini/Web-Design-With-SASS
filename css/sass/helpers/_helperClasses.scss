@@ -1,0 +1,5 @@
+﻿.text-center-xs{
+    @media(#{$maxMobile}){
+        text-align:center;
+    }
+}

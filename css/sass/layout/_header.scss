@@ -1,0 +1,87 @@
+﻿/*Start Header section*/
+.header {
+    padding:20px 0;
+    border-bottom:1px solid $pColor;
+    overflow:hidden;
+    .logo{
+        width:30%;
+        float:left; 
+         
+          
+        @media(#{$minSmall}){
+            width:100%;
+            float:none;
+            text-align:center;
+        }
+         @media(#{$minMid}){
+            width:30%;
+            float:$float-left;
+            text-align:$text-left;
+        }
+        
+        h1{
+            
+            margin-bottom:0;
+            margin-top:0px;
+        }
+        p{
+            font-size:16px;
+            color:$pColor;
+        }
+    }
+    /*Start Nav*/
+    .navbar-o {       
+        width:70%;
+        float:$float-left;
+        background-color:$mainColor;        
+        border-radius:15px;
+        overflow: hidden;
+        
+        @media(#{$minSmall}){
+            width:100%;
+            float:none;
+            margin-top:30px;
+            text-align:center;
+            display:block !important; 
+                      
+        }
+        @media(#{$minMid}){
+            width:70%;
+            float:$float-left;           
+            margin-top:1em;
+            display:block ;           
+        }
+        @media(#{$maxMobile}){
+            display:none ;                       
+            border-radius:0;
+            width:100%;
+                      
+        }
+        
+     
+      ul li{
+           width:20%;
+           float:$float-left;          
+           font-size:18px; 
+           text-align:center;
+          @media(#{$maxMobile}){
+              display:block;
+              float:none;
+              width:100%;
+              text-align:$text-left;
+              padding-left:10px;
+              &:not(:last-child){border-bottom:2px solid #FFF;}
+          }
+
+            a{
+                display:block;
+                text-decoration:none;
+                color:white;
+                padding: 15px 10px;
+                
+            }
+        }
+    }
+    /*end Nav*/
+}
+/*End Header section*/

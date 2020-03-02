@@ -1,0 +1,24 @@
+﻿.HeadingWithBorder{
+    position:relative;
+    h2{
+        background-color:$mainColor;
+        color:#FFF;
+        max-width:300px;
+        border-radius:15px;
+        margin:40px auto;
+        padding:10px 15px;
+        font-size:22px;
+        font-weight:bold;
+        &:before{
+                content:"";
+                   width:100%;
+                   height:2px;
+                   top:50%; /* to move to exactly 50% of the parent's height which is the div element*/
+                   left:0;
+                   background-color:$pColor;
+                   position:absolute;
+                   z-index:-1;
+                }
+
+    }
+}

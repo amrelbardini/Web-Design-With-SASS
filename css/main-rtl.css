@@ -1,0 +1,214 @@
+/*Start header */
+/*Start Header section*/
+.header {
+  /*Start Nav*/
+  /*end Nav*/
+}
+.header .logo {
+  float: left;
+}
+@media (min-width:768px) {
+  .header .logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+@media (min-width:992px) {
+  .header .logo {
+    width: 30%;
+    float: right;
+    text-align: right;
+  }
+}
+.header .logo h1 {
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+.header .logo p {
+  font-size: 16px;
+  color: #9c9c9c;
+}
+.header .navbar-o {
+  float: right;
+}
+@media (min-width:992px) {
+  .header .navbar-o {
+    float: right;
+  }
+}
+.header .navbar-o ul li {
+  float: right;
+}
+@media (max-width:767px) {
+  .header .navbar-o ul li {
+    text-align: right;
+  }
+}
+
+/*End Header section*/
+/*End header */
+/*Start Slider*/
+.slider {
+  padding: 10px 0;
+  text-align: center;
+}
+.slider q {
+  width: 80%;
+  color: #5e5e5e;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Tahoma;
+}
+.slider .img-container {
+  max-width: 800px;
+  margin: 10px auto;
+}
+.slider .img-container img {
+  max-width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.slider .bullets li {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #CCC;
+  background-color: #CCC;
+}
+.slider .bullets li.active, .slider .bullets li:hover {
+  cursor: pointer;
+  border: 2px solid #333;
+  background-color: #FFF;
+}
+
+/*End Slider*/
+/*Start Section services*/
+.services .service-box {
+  text-align: center;
+}
+.services .service-box:not(last-of-type) {
+  padding-right: 20px;
+}
+.services .service-box .service-title {
+  font-size: 26px;
+}
+.services .service-box .service-desc {
+  color: #9c9c9c;
+}
+.services .service-box .link {
+  color: #e2494c;
+  text-decoration: none;
+}
+@media (max-width:767px) {
+  .services .service-box svg {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+/*End Section services*/
+/*start section Our players*/
+.our-players .player-box {
+  float: right;
+}
+@media (min-width:768px) {
+  .our-players .player-box {
+    text-align: right;
+  }
+}
+@media (min-width:992px) {
+  .our-players .player-box {
+    text-align: right;
+  }
+}
+
+/*End section Our players*/
+/*start section lorem */
+.lorem .img-box {
+  float: right;
+}
+
+/*End section lorem */
+/* Start footer section*/
+.footer .gallary, .footer .info, .footer .contact {
+  float: right;
+}
+@media (min-width:992px) {
+  .footer .gallary {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .gallary {
+    float: right;
+  }
+}
+@media (max-width:767px) {
+  .footer .info {
+    float: right;
+  }
+}
+@media (min-width:768px) {
+  .footer .info {
+    float: right;
+  }
+}
+@media (min-width:992px) {
+  .footer .info {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .info {
+    float: right;
+  }
+}
+@media (max-width:767px) {
+  .footer .contact {
+    float: right;
+  }
+}
+@media (min-width:768px) {
+  .footer .contact {
+    float: right;
+  }
+}
+@media (min-width:992px) {
+  .footer .contact {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .contact {
+    float: right;
+    margin-right: 50px;
+  }
+}
+.footer .img-box img {
+  float: right;
+}
+.footer .img-box .text {
+  float: right;
+}
+
+.copyright .copyright-text {
+  float: right;
+}
+.copyright .copyright-text {
+  text-align: right;
+}
+.copyright .author {
+  float: right;
+}
+.copyright .author {
+  text-align: left;
+}
+
+/* End footer section*/
+/*# sourceMappingURL=to.css.map */

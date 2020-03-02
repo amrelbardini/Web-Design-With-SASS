@@ -1,0 +1,143 @@
+﻿/*Start Slider*/
+.slider {
+    padding:10px 0;
+    text-align:center;
+    q{
+        width:80%;
+        color:#5e5e5e;
+        padding:10px;
+        font-style:italic;
+        font-weight:bold;
+        font-family:Tahoma;
+    }
+    .img-container {
+        max-width:800px; 
+        margin:10px auto;     
+        img{
+            max-width:100%;
+             align-self:center;
+        }
+    }
+    .bullets{
+        li {
+            display:inline-block;
+            text-align:center;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            border:2px solid #CCC;
+            background-color:#CCC;
+            &.active,&:hover
+            {
+                cursor:pointer;
+                border:2px solid #333;
+                background-color:#FFF;
+            }
+        }
+    }
+}
+
+/*End Slider*/
+/*Start Section services*/
+.services {
+    .service-box{
+        text-align:center;
+        &:not(last-of-type){
+            padding-right:20px;
+        }       
+        .service-title{
+            font-size:26px;
+            
+        }
+        .service-desc{
+            color:$pColor;
+        }
+        .link{
+            color:$mainColor;
+            text-decoration:none;
+        }
+        @media(#{$maxMobile}){
+            svg{
+                font-size:30px;
+                display:block;
+                margin-bottom:5px;
+                width:100%;
+            }
+            
+        }
+    }
+}
+
+
+/*End Section services*/
+/*start section Our players*/
+.our-players {
+    .player-box{
+        float:$float-left;
+        width:(100%/5);
+        @media(#{$maxMobile}){
+            width:(100%/2);
+            margin-bottom:40px;
+            text-align: center;
+        }
+        @media(#{$minSmall}){
+            width:(100%/3);
+            margin-bottom:40px;
+            text-align: $text-left;
+        }
+        @media(#{$minMid}){
+            width:(100%/3);
+            margin-bottom:40px;
+            text-align: $text-left;
+            padding-left:20px;
+            padding-right:20px;
+        }
+        @media(#{$minLarge}){
+            width:(100%/5);
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .player{
+            
+            @media(#{$maxMobile}){
+                .player-desc{
+                    width:70%;
+                    color:$pColor;
+                    margin-left:30px;
+                }
+                
+                
+            }
+            .player-title{
+                margin-top:10px;
+                color:$pColor;
+                span{
+                    font-weight:bold;
+                    color:#666;
+                }
+            }
+            .player-desc{
+                width:80%;
+                color:$pColor;
+            }
+            .link{
+                color:$mainColor;
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+
+/*End section Our players*/
+
+/*start section lorem */
+.lorem {
+    .img-box{
+        float:$float-left;
+         width:(94%/3);
+        &:not(:last-of-type){margin-left:3%;}         
+        img {max-width:100%;}        
+         }
+    }
+/*End section lorem */

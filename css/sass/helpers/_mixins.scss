@@ -1,0 +1,56 @@
+﻿@mixin minMedium {
+    @media(min-width:992px){
+        @content;
+    }
+} 
+
+/*start Overlay mixin includes the main properties of an overlay*/
+@mixin overlay{  
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+/*End Overlay mixin*/
+/*Start Prefixer mixin*/
+@mixin prefixer($property,$value,$prefixes:()){
+    @each $prefix in $prefixes{
+        #{"-"+$prefix+"-"+$property}:$value;
+    }
+    #{$property}:$value;
+}
+/*End Prefixer mixin*/
+
+/*
+   Start opacity Mixin for IE and other browsers
+*/
+@mixin opacity($val) {
+    zoom:1;
+    $opacity-ie:$val*100;
+    filter:alpha(opacity=$opacity-ie);
+    opacity:$val;
+}
+
+/*
+   End opacity Mixin for IE and other browsers
+*/
+
+
+/*
+    Animation Mixin
+    Auto add prefixes to animation
+*/
+
+@mixin keyFrame($animation-name){
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-name}{
+        @content;
+    }
+    @-o-keyframes #{$animation-name}{
+        @content;
+    }
+}

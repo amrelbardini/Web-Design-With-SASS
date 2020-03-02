@@ -1,0 +1,204 @@
+﻿.footer {
+    background-color:#e2e2e2;
+    min-height:400px;
+    margin-top:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    overflow:hidden;
+    
+    .gallary, .info ,.contact {
+        float:$float-left;
+    }
+    .gallary {
+        
+        
+       @media(#{$maxMobile}){
+           width:100%;
+           float:none;
+           margin-bottom:20px;
+       }
+       @media(#{$minToMobile}){
+        float:none;
+        width:100%;
+       }
+       @media(#{$minSmall}){
+           width:100%;
+           float: none;
+
+       }
+       @media(#{$minMid}){
+        width:100%;
+        float:$float-left;
+    }
+     @media (min-width:1200px){
+         width:40%;
+         float:$float-left;
+         margin-top: 0px;
+     }
+
+    }
+    .info{
+        
+        @media(#{$maxMobile}){
+            width:50%;
+            float:$float-left;
+        }
+        @media(#{$minToMobile}){
+            float:none;
+            width:100%;
+        }
+        @media(#{$minSmall}){
+            width:50%;
+            float: $float-left;
+            margin-top:50px;
+ 
+        }
+        @media(#{$minMid}){
+         width:50%;       
+         float:$float-left;
+     }
+     @media (min-width:1200px){
+        width:25%;
+        float:$float-left;
+        margin-top: 0px;
+        margin-right: 40px;
+    }
+     
+     
+     }
+
+    
+    .contact {
+        
+        @media(#{$maxMobile}){
+            width:50%;
+            float:$float-left;
+            
+        }
+        @media(#{$minToMobile}){
+            float:none;
+            width:100%;
+        }  
+        @media(#{$minSmall}){
+            width:50%;
+            float: $float-left;
+            margin-top:50px;
+ 
+        }
+        @media(#{$minMid}){
+         width:50%;        
+         float:$float-left;
+         
+         
+         }
+         @media (min-width:1200px){
+            width:25%;
+            float:$float-left;
+            margin-top: 0;
+            
+        }
+     
+    }
+    .section-title {
+        color:#777;
+        font-weight:normal;
+        text-transform:capitalize;
+        font-size:20px;
+        
+    }
+    .img-box {
+         overflow:hidden;
+         margin-top:30px;
+        img{
+            float:$float-left;
+            width:120px;
+            height:120px;
+        }
+        .text{
+            float:$float-left;
+            width:60%;
+            margin-left:15px;
+            margin-left:15px;
+            .gallary-title {
+                color:$mainColor;
+                margin:0;
+                font-size:18px;
+            }
+            .gallary-desc{
+                color:$pColor;
+                line-height:1.8;
+                margin-top:5px;
+            }
+        }
+    }
+    .info{
+        ul{
+            color:#888;
+            margin-top:50px;
+            li{
+                margin-top:10px;
+                span{
+                    color:$mainColor;
+                    text-transform:none;
+                    font-weight:bold;
+                }
+            }
+        }
+        .working{
+            color:#888;
+            font-size:20px;
+            text-transform:capitalize;
+            margin-bottom:0;
+        }
+        p{
+            margin-top:5px;
+            color:#888;
+        }
+    }
+    .contact{       
+        form{         
+            input[type="text"],input[type="email"]{
+                border:none;
+                width:100%;
+                padding:10px 0 10px 15px;
+                border-radius:5px;
+                margin-bottom:10px;             
+            }
+                
+           
+            input[type="text"]{
+                margin-top:20px;
+            }
+            textarea{
+                width:100%;
+                height:150px;
+                border:none;
+                padding:10px;
+                border-radius:5px;
+
+            }
+        }
+    }
+    .copyright{
+        border-top:2px solid #CCC;
+        margin-top:20px;
+        color:#888;
+        .copyright-text,.author{
+            padding-top:30px;
+        }
+        .copyright-text{
+            width:50%;
+            float:$float-left;
+        }
+        .copyright-text{
+            text-align:$text-left;
+        }
+        .author {
+            width:50%;
+            float:$float-left;
+        }
+        .author{
+            text-align:$text-right;
+        }
+    }
+}
